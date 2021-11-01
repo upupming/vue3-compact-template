@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer",
+    "johnsoncodehk.volar",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "pkief.material-icon-theme",
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "stylelint.vscode-stylelint",
+    "voorjaar.windicss-intellisense"
+  ]
+}

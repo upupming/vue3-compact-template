@@ -1,0 +1,51 @@
+{
+  // Use eslint to format js/ts files
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.wordWrap": "on",
+  // Use prettier to format files
+  "editor.formatOnSave": true,
+  // Since we use eslint to format js/ts files, so we have to disable prettier to avoid confilcts
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // Disable css built-in lint
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "html", "vue"],
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[less]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "cSpell.words": [],
+  "editor.detectIndentation": false,
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  }
+}
