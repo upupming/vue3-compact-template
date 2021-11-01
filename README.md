@@ -7,11 +7,11 @@
 
 ## Tech stack
 
-- Framework: Vue 3
-- Package manager: pnpm
-- Build tool: Vite 2
-- State management: Pinia
-- Router: Vue Router
+- Framework: [Vue 3](https://v3.vuejs.org/)
+- Package manager: [pnpm](https://github.com/pnpm/pnpm)
+- Build tool: [Vite 2](https://vitejs.dev/)
+- State management: [Pinia](https://pinia.esm.dev/)
+- Router: [Vue Router](https://next.router.vuejs.org/)
 - Utility first CSS framework: [WindiCSS](https://windicss.org/)
 - CSS preprocessor: [Less](https://lesscss.org/)
 - UI component explorer: [Storybook](https://github.com/storybookjs/storybook/)
