@@ -5,6 +5,8 @@
 
 ⚡️ A simple and compact vue 3 template with current cutting edge front end technologies.
 
+See the live demo at: http://upupming.site/vue3-compact-template/
+
 ## Tech stack
 
 - Framework: [Vue 3](https://v3.vuejs.org/)
@@ -22,8 +24,20 @@
 ## Development
 
 ```bash
+# Development
 pnpm run dev
+# Run storybook
+pnpm run storybook
 ```
+
+## Build
+
+```bash
+pnpm run build
+pnpm run build-storybook
+```
+
+The `vue3-compact-template` folder will contain both the app and storybook build result, you can just serve them under `vue3-compact-template` path in your server. If you want to change the output directory structure, please change the [deploy.config.js](deploy.config.js) and the `folder` settings in the deploy script [ci.yml](.github/workflows/ci.yml).
 
 ### Recommendations
 
