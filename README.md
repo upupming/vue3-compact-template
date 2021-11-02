@@ -5,7 +5,10 @@
 
 ⚡️ A simple and compact vue 3 template with current cutting edge front end technologies.
 
-See the live demo at: http://upupming.site/vue3-compact-template/
+See the live demo at: 
+
+- http://upupming.site/vue3-compact-template/
+- http://upupming.site/vue3-compact-template/storybook
 
 ## Tech stack
 
