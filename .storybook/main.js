@@ -1,5 +1,6 @@
 const path = require('path')
 const WindiCSS = require('vite-plugin-windicss').default
+const deployConfig = require('../deploy.config')
 
 module.exports = {
   stories: [
@@ -23,10 +24,14 @@ module.exports = {
     // solve cjs name export not able to be converted to esm problem
     // https://github.com/vitejs/vite/issues/813#issuecomment-691799104
     // https://github.com/eirslett/storybook-builder-vite/issues/132
+    config.optimizeDeps = config.optimizeDeps || {}
+    config.optimizeDeps.include = config.optimizeDeps.include || []
     config.optimizeDeps.include.push('synchronous-promise')
 
     // https://github.com/storybookjs/storybook/issues/10887#issuecomment-901109891
     config.resolve.dedupe = ['@storybook/client-api']
+
+    config.base = `${deployConfig.path}/${deployConfig.storybookFolder}`
 
     // return the customized config
     return config

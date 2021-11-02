@@ -11,9 +11,13 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
+    "allowJs": true,
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "outDir": "out",
+    "types": ["vite/client"],
+    "skipLibCheck": true
   },
   "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"]
 }

@@ -2,6 +2,7 @@
   "name": "vue3-compact-template",
   "version": "0.0.0",
   "scripts": {
+    "preinstall": "node ./.scripts/check_pnpm.js",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "prepare": "husky install",
@@ -10,7 +11,7 @@
     "lint:stylelint": "stylelint --fix **/*.{css,less,html,vue}",
     "lint": "pnpm run lint:eslint && pnpm run lint:stylelint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "node build-storybook.js"
   },
   "dependencies": {
     "pinia": "^2.0.0",
