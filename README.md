@@ -5,7 +5,7 @@
 
 ⚡️ A simple and compact vue 3 template with current cutting edge front end technologies.
 
-See the live demo at: 
+See the live demo at:
 
 - http://upupming.site/vue3-compact-template/
 - http://upupming.site/vue3-compact-template/storybook
@@ -20,6 +20,7 @@ See the live demo at:
 - Utility first CSS framework: [WindiCSS](https://windicss.org/)
 - CSS preprocessor: [Less](https://lesscss.org/)
 - UI component explorer: [Storybook](https://github.com/storybookjs/storybook/)
+- Icons: [unplugin-icons](https://github.com/antfu/unplugin-icons)
 - ESLint rule: [eslint-config-standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript)
 - Style linting: stylelint standard
 - commit convention: husky + commitlint

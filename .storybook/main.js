@@ -31,7 +31,7 @@ module.exports = {
     // https://github.com/storybookjs/storybook/issues/10887#issuecomment-901109891
     config.resolve.dedupe = ['@storybook/client-api']
 
-    config.base = `${deployConfig.path}/${deployConfig.storybookFolder}`
+    config.base = `/${deployConfig.path}/${deployConfig.storybookFolder}/`
 
     // return the customized config
     return config

@@ -4,6 +4,8 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+
+  @apply bg-gray-100;
 }
 
 html.dark {
@@ -38,4 +40,30 @@ html.dark {
     hover:opacity-100 hover:text-teal-600;
 
   font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(160deg 100% 37% / 100%);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsl(160deg 100% 37% / 20%);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+:root {
+  --color-border: rgb(60 60 60 / 12%);
+  --section-gap: 160px;
 }

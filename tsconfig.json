@@ -16,7 +16,7 @@
       "@/*": ["src/*"]
     },
     "outDir": "out",
-    "types": ["vite/client"],
+    "types": ["vite/client", "unplugin-icons/types/vue"],
     "skipLibCheck": true
   },
   "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"]
