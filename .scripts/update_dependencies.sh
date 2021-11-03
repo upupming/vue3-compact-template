@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # MIT © Sindre Sorhus - sindresorhus.com
-# 当 git pull 的时候发现以来有更新的话，npm i 一下，参考链接：
+# 当 git pull 的时候发现以来有更新的话，pnpm i 一下，参考链接：
 # https://gist.github.com/sindresorhus/7996717
 # https://gist.github.com/GianlucaGuarini/8001627
 
@@ -14,5 +14,5 @@ check_run() {
 }
 
 # Example usage
-# In this example it's used to run `npm install` if package.json changed
-check_run "package.json|package-lock.json" "npm install"
+# In this example it's used to run `pnpm install` if package.json changed
+check_run "package.json|pnpm-lock.yaml" "pnpm install"
