@@ -19,18 +19,11 @@
     "vue-router": "4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,mjsx,cjs,cjsx}": [
-      "eslint --fix --color",
-      "git add"
+    "*.{js,jsx,ts,tsx,mjs,mjsx,cjs,cjsx,vue}": [
+      "eslint --fix --color"
     ],
-    "*.{css,less,html}": [
-      "stylelint --fix",
-      "git add"
-    ],
-    "*.vue": [
-      "eslint --fix --color",
-      "stylelint --fix",
-      "git add"
+    "*.{css,less,html,vue}": [
+      "stylelint --fix"
     ]
   },
   "devDependencies": {
