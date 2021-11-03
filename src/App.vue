@@ -48,61 +48,57 @@ import IconGitHub from '~icons/mdi/github'
 </template>
 
 <style lang="less">
-@layer base {
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  a {
-    text-decoration: none;
-    color: hsl(160deg 100% 37% / 100%);
-    transition: 0.4s;
-  }
-
-  a:hover {
-    background-color: hsl(160deg 100% 37% / 20%);
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    position: relative;
-    font-weight: normal;
-  }
-
-  :root {
-    --color-border: rgb(60 60 60 / 12%);
-    --section-gap: 160px;
-  }
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@layer components {
-  .nav-item {
-    @apply py-1 px-2 hover:bg-[#42b983dd] bg-[#42b983ee] active:bg-[#42b983ff] text-white rounded;
-  }
+a {
+  text-decoration: none;
+  color: hsl(160deg 100% 37% / 100%);
+  transition: 0.4s;
+}
 
-  .router-link-exact-active {
-    @apply font-bold;
-  }
+a:hover {
+  background-color: hsl(160deg 100% 37% / 20%);
+}
 
-  .btn {
-    @apply px-4 py-1 rounded inline-block
-      bg-teal-600 text-white cursor-pointer
-      hover:bg-teal-700
-      disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
 
-  .icon-btn {
-    @apply inline-block cursor-pointer select-none
-      opacity-75 transition duration-200 ease-in-out
-      hover:opacity-100 hover:text-teal-600;
+:root {
+  --color-border: rgb(60 60 60 / 12%);
+  --section-gap: 160px;
+}
 
-    font-size: 0.9em;
-  }
+.nav-item {
+  @apply py-1 px-2 hover:bg-[#42b983dd] bg-[#42b983ee] active:bg-[#42b983ff] text-white rounded;
+}
+
+.router-link-exact-active {
+  @apply font-bold;
+}
+
+.btn {
+  @apply px-4 py-1 rounded inline-block
+    bg-teal-600 text-white cursor-pointer
+    hover:bg-teal-700
+    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+}
+
+.icon-btn {
+  @apply inline-block cursor-pointer select-none
+    opacity-75 transition duration-200 ease-in-out
+    hover:opacity-100 hover:text-teal-600;
+
+  font-size: 0.9em;
 }
 
 </style>

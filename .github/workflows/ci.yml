@@ -32,3 +32,5 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: vue3-compact-template # The folder the action should deploy.
+          git-config-name: 'github-actions[bot]'
+          git-config-email: 'github-actions[bot]@users.noreply.github.com'

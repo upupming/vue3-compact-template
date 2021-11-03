@@ -12,27 +12,25 @@
   </div>
 </template>
 
-<style scoped>
-@layer base {
-  h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.4rem;
-    color: #2c3e50;
-  }
+<style>
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #2c3e50;
+}
 
-  i {
-    display: flex;
-    place-items: center;
-    place-content: center;
-    top: calc(50% - 25px);
-    left: -26px;
-    position: absolute;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-  }
+i {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  top: calc(50% - 25px);
+  left: -26px;
+  position: absolute;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
 }
 
 .item {
