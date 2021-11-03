@@ -6,7 +6,10 @@ specifiers:
   '@commitlint/config-angular': ^13.2.0
   '@commitlint/prompt-cli': ^13.2.1
   '@iconify-json/carbon': ^1.0.8
+  '@iconify-json/fluent': ^1.0.6
+  '@iconify-json/gg': ^1.0.1
   '@iconify-json/mdi': ^1.0.7
+  '@iconify-json/simple-icons': ^1.0.7
   '@storybook/addon-actions': ^6.4.0-beta.23
   '@storybook/addon-essentials': ^6.4.0-beta.23
   '@storybook/addon-links': ^6.4.0-beta.23
@@ -56,7 +59,10 @@ devDependencies:
   '@commitlint/config-angular': 13.2.0
   '@commitlint/prompt-cli': 13.2.1
   '@iconify-json/carbon': 1.0.8
+  '@iconify-json/fluent': 1.0.6
+  '@iconify-json/gg': 1.0.1
   '@iconify-json/mdi': 1.0.7
+  '@iconify-json/simple-icons': 1.0.7
   '@storybook/addon-actions': 6.4.0-beta.23
   '@storybook/addon-essentials': 6.4.0-beta.23_c29d783a26b6d92d9f90a8a32b85dad3
   '@storybook/addon-links': 6.4.0-beta.23
@@ -1942,8 +1948,26 @@ packages:
       '@iconify/types': 1.0.10
     dev: true
 
+  /@iconify-json/fluent/1.0.6:
+    resolution: {integrity: sha512-5vr/yFVjswA6ZefIqy61u6A2u+4pdk6IBBeCGRH+n7UxSAYfyjTFpLwhjOPVrTNgdGS3HMX7GFM/2Ekp9JnXGA==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
+  /@iconify-json/gg/1.0.1:
+    resolution: {integrity: sha512-kIxAZ9NX1+qOuLZDnKnnR5BvblPkHzPE7O7sAObg6BFVXHb2JGwV/ldJOmrrAvUy+FYii3TP2KR8pKb0kVnstg==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
   /@iconify-json/mdi/1.0.7:
     resolution: {integrity: sha512-CZJ6u3zpE9e4TXFQVhU5fazespAE0U3K4IZsV+Gg/xTLpeLnXU64UBzS/zpjXYaMC6G1Hl8A0l0FYlgb4vl1Mw==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
+  /@iconify-json/simple-icons/1.0.7:
+    resolution: {integrity: sha512-XSAB1FJd/ZRnXF3zSb0YSRY0M9+aWFD9oN10qBsXzz+Mc9FoVdshaGAhDtOMx/4azBGcyTj3kcnjYliSqeah/Q==}
     dependencies:
       '@iconify/types': 1.0.10
     dev: true

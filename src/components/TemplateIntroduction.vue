@@ -90,7 +90,7 @@ const counter = useCounterStore()
     </div>
     <p>
       Edit
-      <code>components/HelloWorld.vue</code> to test hot module replacement.
+      <code>components/TemplateIntroduction.vue</code> to test hot module replacement.
     </p>
   </div>
 </template>
