@@ -2,10 +2,10 @@ const { spawn } = require('child_process')
 const deployConfig = require('./deploy.config')
 
 spawn(
-  'pnpx',
+  /^win/.test(process.platform) ? 'pnpx.cmd' : 'pnpx',
   [
     'build-storybook',
-    '-o', `${deployConfig.path}/${deployConfig.storybookFolder}`
+    '-o', `dist/${deployConfig.storybookFolder}`
   ],
   { stdio: 'inherit' }
 )

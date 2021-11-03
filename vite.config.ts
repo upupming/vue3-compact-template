@@ -19,8 +19,5 @@ export default defineConfig({
       autoInstall: true
     })
   ],
-  build: {
-    outDir: deployConfig.path
-  },
   base: `/${deployConfig.path}/`
 })

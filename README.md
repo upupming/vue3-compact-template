@@ -1,5 +1,7 @@
 # vue3-compact-template
 
+English | [中文](README.zh.md)
+
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
 
@@ -8,7 +10,7 @@
 See the live demo at:
 
 - http://upupming.site/vue3-compact-template/
-- http://upupming.site/vue3-compact-template/storybook
+- http://upupming.site/vue3-compact-template/storybook/
 
 ## Tech stack
 
@@ -41,7 +43,7 @@ pnpm run build
 pnpm run build-storybook
 ```
 
-The `vue3-compact-template` folder will contain both the app and storybook build result, you can just serve them under `vue3-compact-template` path in your server. If you want to change the output directory structure, please change the [deploy.config.js](deploy.config.js) and the `folder` settings in the deploy script [ci.yml](.github/workflows/ci.yml).
+After built, the `dist` folder will contain both the app and storybook build result, you can just serve them using `pnpm run serve`.
 
 ### Recommendations
 
