@@ -7,8 +7,9 @@ export default {
   component: TemplateIntroduction,
   argTypes: {
     msg: {
+      // https://storybook.js.org/docs/react/essentials/controls#annotation
       control: {
-        type: 'string'
+        type: 'text'
       }
     }
   }

@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 
+// Currentlt it is not possible to export this type: https://github.com/vuejs/vue-next/issues/4918
 interface TemplateIntroductionProps {
   msg?: string
 }
