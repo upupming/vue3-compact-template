@@ -13,11 +13,15 @@
     "baseUrl": ".",
     "allowJs": true,
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      // disable react types as a work around for: https://github.com/storybookjs/storybook/pull/16629
+      // https://github.com/Microsoft/TypeScript/issues/17042#issuecomment-327882577
+      "react": [".sink.d.ts"]
     },
     "outDir": "out",
     "types": ["vite/client", "unplugin-icons/types/vue"],
     "skipLibCheck": true
   },
-  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"]
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"],
+  "exclude": ["dist", "node_modules"]
 }

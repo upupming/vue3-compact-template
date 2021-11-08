@@ -22,6 +22,16 @@ module.exports = {
         // The core 'no-undef' rules does not work with type definitions
         'no-undef': 'off'
       }
+    },
+    // storybook specific rules
+    {
+      files: ['**/**.stories.ts', '**/**.stories.tsx'],
+      rules: {
+        'import/no-anonymous-default-export': 0,
+        'no-console': 0,
+        '@typescript-eslint/consistent-type-assertions': 0
+
+      }
     }
   ]
 }

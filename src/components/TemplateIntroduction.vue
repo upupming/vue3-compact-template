@@ -2,14 +2,18 @@
 import { ref } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 
-defineProps<{ msg?: string }>()
+interface TemplateIntroductionProps {
+  msg?: string
+}
+
+defineProps<TemplateIntroductionProps>()
 
 const count = ref(0)
 const counter = useCounterStore()
 </script>
 
 <template>
-  <div>
+  <div class="mt-2 pb-2 space-y-2">
     <h1
       v-if="msg"
       class="font-semibold text-xl text-gray-600"
@@ -115,4 +119,12 @@ code {
 p {
   @apply my-4;
 }
+
+.btn {
+  @apply px-4 py-1 rounded inline-block
+    bg-teal-600 text-white cursor-pointer
+    hover:bg-teal-700
+    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+}
+
 </style>
