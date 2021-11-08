@@ -12,6 +12,8 @@
     "yzhang.markdown-all-in-one",
     "davidanson.vscode-markdownlint",
     "stylelint.vscode-stylelint",
-    "voorjaar.windicss-intellisense"
+    "voorjaar.windicss-intellisense",
+    // This plugin makes import { xxx } from 'xxx.vue' works
+    "johnsoncodehk.vscode-typescript-vue-plugin"
   ]
 }

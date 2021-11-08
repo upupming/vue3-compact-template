@@ -1,4 +1,4 @@
-import TemplateIntroduction from './TemplateIntroduction.vue'
+import TemplateIntroduction, { TemplateIntroductionProps } from './TemplateIntroduction.vue'
 
 import { Meta, Story } from '@storybook/vue3'
 
@@ -13,7 +13,7 @@ export default {
       }
     }
   }
-} as Meta
+} as Meta<TemplateIntroductionProps>
 
 const Template: Story = (args) => ({
   components: { TemplateIntroduction },

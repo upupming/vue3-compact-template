@@ -1,12 +1,16 @@
-<script setup lang="ts">
-import { ref } from 'vue'
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 
-// Currentlt it is not possible to export this type: https://github.com/vuejs/vue-next/issues/4918
-interface TemplateIntroductionProps {
+export interface TemplateIntroductionProps {
   msg?: string
 }
 
+// https://github.com/vuejs/vue-next/issues/4918
+export default defineComponent({})
+</script>
+
+<script setup lang="ts">
 defineProps<TemplateIntroductionProps>()
 
 const count = ref(0)
