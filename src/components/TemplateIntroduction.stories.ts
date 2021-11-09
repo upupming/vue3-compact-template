@@ -1,5 +1,5 @@
 import TemplateIntroduction, { TemplateIntroductionProps } from './TemplateIntroduction.vue'
-
+import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/vue3'
 
 export default {
@@ -15,12 +15,14 @@ export default {
   }
 } as Meta<TemplateIntroductionProps>
 
-const Template: Story = (args) => ({
+const Template: Story<TemplateIntroductionProps> = (args) => ({
   components: { TemplateIntroduction },
+  // https://github.com/storybookjs/storybook/discussions/11372#discussioncomment-32947
+  methods: { update: action('update') },
   setup () {
     return { args }
   },
-  template: '<template-introduction v-bind="args" />'
+  template: '<template-introduction v-bind="args" @update="update" />'
 })
 
 export const Example = Template.bind({})

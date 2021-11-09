@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, defineEmits } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 
 export interface TemplateIntroductionProps {
@@ -12,13 +12,20 @@ export default defineComponent({})
 
 <script setup lang="ts">
 defineProps<TemplateIntroductionProps>()
+interface TemplateIntroductionEmits {
+  (event: 'update', msg: string): void
+}
+const emits = defineEmits<TemplateIntroductionEmits>()
 
 const count = ref(0)
 const counter = useCounterStore()
 </script>
 
 <template>
-  <div class="mt-2 pb-2 space-y-2">
+  <div
+    class="mt-2 pb-2 space-y-2"
+    @click="emits('update', 'Hello from TemplateIntroductionEmits')"
+  >
     <h1
       v-if="msg"
       class="font-semibold text-xl text-gray-600"

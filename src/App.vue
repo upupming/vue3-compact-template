@@ -3,6 +3,10 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import TemplateIntroduction from '@/components/TemplateIntroduction.vue'
 import IconGitHub from '~icons/mdi/github'
+
+const onTemplateIntroductionUpdate = (msg: string) => {
+  console.log(msg)
+}
 </script>
 
 <template>
@@ -24,6 +28,7 @@ import IconGitHub from '~icons/mdi/github'
     </div>
     <TemplateIntroduction
       msg="⚡️ A simple and compact vue 3 template with current cutting edge front end technologies."
+      @update="onTemplateIntroductionUpdate"
     />
   </div>
   <div class="mt-12 flex items-center justify-center space-x-2">
