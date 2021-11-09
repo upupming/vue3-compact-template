@@ -13,7 +13,7 @@
     "davidanson.vscode-markdownlint",
     "stylelint.vscode-stylelint",
     "voorjaar.windicss-intellisense",
-    // This plugin makes import { xxx } from 'xxx.vue' works
+    // This plugin makes import { xxx } from 'xxx.vue' works in ts: https://github.com/johnsoncodehk/volar/issues/664
     "johnsoncodehk.vscode-typescript-vue-plugin"
   ]
 }
