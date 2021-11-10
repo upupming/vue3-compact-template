@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/vue3'
 
 export default {
-  title: 'Components/TemplateIntroduction',
+  title: 'Components',
   component: TemplateIntroduction,
   argTypes: {
     msg: {
@@ -25,7 +25,7 @@ const Template: Story<TemplateIntroductionProps> = (args) => ({
   template: '<template-introduction v-bind="args" @update="update" />'
 })
 
-export const Example = Template.bind({})
-Example.args = {
+export const TemplateIntroductionDemo = Template.bind({})
+TemplateIntroductionDemo.args = {
   msg: '⚡️ A simple and compact vue 3 template with current cutting edge front end technologies.'
 }
