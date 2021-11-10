@@ -92,36 +92,45 @@
     </div>
   </div>
 </template>
-<style>
+<style lang="less">
+/* Helper function that will change `rgb(255, 255, 255)` to `255, 255, 255` and set it to css var `@result`
+ * Using the Unnamed lookups feature of Less Mixins
+ * This is to avoid plane values like `255, 255, 255` cannot be detected by color picker in VSCode
+ * You can test this demo in https://lesscss.org/less-preview/
+ */
+.rgb-val(@rgb) {
+  @result: e(replace(@rgb, "rgb\((.*)\)", "$1"));
+}
+
 @layer base {
   :root {
-    --color-text-base: 255, 255, 255;
-    --color-text-muted: 199, 210, 254;
-    --color-text-inverted: 79, 70, 229;
-    --color-fill: 67, 56, 202;
-    --color-button-accent: 255, 255, 255;
-    --color-button-accent-hover: 238, 242, 255;
-    --color-button-muted: 99, 102, 241;
+    --color-text-base: .rgb-val("rgb(255, 255, 255)") [];
+    --color-text-muted: .rgb-val("rgb(199, 210, 254)") [];
+    --color-text-inverted: .rgb-val("rgb(79, 70, 229)") [];
+    --color-fill: .rgb-val("rgb(67, 56, 202)") [];
+    --color-button-accent: .rgb-val("rgb(255, 255, 255)") [];
+    --color-button-accent-hover: .rgb-val("rgb(238, 242, 255)") [];
+    --color-button-muted: .rgb-val("rgb(99, 102, 241)") [];
   }
 
   .theme-swiss {
-    --color-text-base: 255, 255, 255;
-    --color-text-muted: 254, 202, 202;
-    --color-text-inverted: 220, 38, 38;
-    --color-fill: 185, 28, 28;
-    --color-button-accent: 255, 255, 255;
-    --color-button-accent-hover: 254, 242, 242;
-    --color-button-muted: 239, 68, 68;
+    --color-text-base: .rgb-val("rgb(255, 255, 255)") [];
+    --color-text-muted: .rgb-val("rgb(254, 202, 202)") [];
+    --color-text-inverted: .rgb-val("rgb(220, 38, 38)") [];
+    --color-fill: .rgb-val("rgb(185, 28, 28)") [];
+    --color-button-accent: .rgb-val("rgb(255, 255, 255)") [];
+    --color-button-accent-hover: .rgb-val("rgb(254, 242, 242)") [];
+    --color-button-muted: .rgb-val("rgb(239, 68, 68)") [];
   }
 
   .theme-neon {
-    --color-text-base: 17, 24, 2;
-    --color-text-muted: 47, 67, 6;
-    --color-text-inverted: 235, 250, 204;
-    --color-fill: 179, 255, 23;
-    --color-button-accent: 36, 52, 3;
-    --color-button-accent-hover: 55, 79, 5;
-    --color-button-muted: 212, 255, 122;
+    --color-text-base: .rgb-val("rgb(17, 24, 2)") [];
+    --color-text-muted: .rgb-val("rgb(47, 67, 6)") [];
+    --color-text-inverted: .rgb-val("rgb(235, 250, 204)") [];
+    --color-fill: .rgb-val("rgb(179, 255, 23)") [];
+    --color-button-accent: .rgb-val("rgb(36, 52, 3)") [];
+    --color-button-accent-hover: .rgb-val("rgb(55, 79, 5)") [];
+    --color-button-muted: .rgb-val("rgb(212, 255, 122)") [];
   }
 }
 
