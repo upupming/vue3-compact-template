@@ -45,6 +45,9 @@ pnpm run build-storybook
 
 After built, the `dist` folder will contain both the app and storybook build result, you can just serve them using `pnpm run serve`.
 
+- http://localhost:5000/vue3-compact-template/
+- http://localhost:5000/vue3-compact-template/storybook/
+
 ### Recommendations
 
 - Component library: [NaiveUI](https://www.naiveui.com/zh-CN/os-theme), [arco design](https://arco.design/), [Varlet](https://github.com/haoziqaq/varlet)

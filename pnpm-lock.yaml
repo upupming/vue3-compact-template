@@ -38,10 +38,11 @@ specifiers:
   stylelint-config-recommended-vue: ^1.0.0
   stylelint-config-standard: ^23.0.0
   stylelint-less: ^1.0.1
+  tailwindcss-themeable: ^1.0.0
   typescript: ^4.4.4
   unplugin-icons: ^0.12.17
-  vite: ^2.6.4
-  vite-plugin-windicss: ^1.4.12
+  vite: ^2.6.14
+  vite-plugin-windicss: ^1.5.4
   vue: ^3.2.16
   vue-loader: ^16.8.2
   vue-router: '4'
@@ -69,7 +70,7 @@ devDependencies:
   '@storybook/vue3': 6.4.0-beta.23_5f00a09ea1b61a1f21dfa650e67e3d75
   '@types/node': 16.11.6
   '@typescript-eslint/eslint-plugin': 4.33.0_eslint@7.32.0+typescript@4.4.4
-  '@vitejs/plugin-vue': 1.9.4_vite@2.6.13
+  '@vitejs/plugin-vue': 1.9.4_vite@2.6.14
   babel-loader: 8.2.3_@babel+core@7.16.0
   eslint: 7.32.0
   eslint-config-standard-with-typescript: 21.0.1_8d691c34813dab6e7d3913a38bdaf4c7
@@ -82,7 +83,7 @@ devDependencies:
   lint-staged: 11.2.6
   prettier-stylelint: 0.4.2
   standard-version: 9.3.2
-  storybook-builder-vite: 0.1.3_@babel+core@7.16.0+vite@2.6.13
+  storybook-builder-vite: 0.1.3_@babel+core@7.16.0+vite@2.6.14
   stylelint: 14.0.1
   stylelint-config-html: 1.0.0_stylelint@14.0.1
   stylelint-config-recommended: 6.0.0_stylelint@14.0.1
@@ -90,10 +91,11 @@ devDependencies:
   stylelint-config-recommended-vue: 1.0.0_stylelint@14.0.1
   stylelint-config-standard: 23.0.0_stylelint@14.0.1
   stylelint-less: 1.0.1
+  tailwindcss-themeable: 1.0.1
   typescript: 4.4.4
-  unplugin-icons: 0.12.17_vite@2.6.13
-  vite: 2.6.13_less@4.1.2
-  vite-plugin-windicss: 1.4.12_vite@2.6.13
+  unplugin-icons: 0.12.17_vite@2.6.14
+  vite: 2.6.14_less@4.1.2
+  vite-plugin-windicss: 1.5.4_vite@2.6.14
   vue-loader: 16.8.2
   vue-tsc: 0.3.0_typescript@4.4.4
   windicss: 3.2.1
@@ -155,7 +157,7 @@ packages:
       '@babel/traverse': 7.16.0
       '@babel/types': 7.16.0
       convert-source-map: 1.8.0
-      debug: 4.3.2
+      debug: 4.3.3
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       lodash: 4.17.21
@@ -264,7 +266,7 @@ packages:
       '@babel/helper-module-imports': 7.16.0
       '@babel/helper-plugin-utils': 7.14.5
       '@babel/traverse': 7.16.0
-      debug: 4.3.2
+      debug: 4.3.3
       lodash.debounce: 4.0.8
       resolve: 1.20.0
       semver: 6.3.0
@@ -282,7 +284,7 @@ packages:
       '@babel/helper-module-imports': 7.16.0
       '@babel/helper-plugin-utils': 7.14.5
       '@babel/traverse': 7.16.0
-      debug: 4.3.2
+      debug: 4.3.3
       lodash.debounce: 4.0.8
       resolve: 1.20.0
       semver: 6.3.0
@@ -1906,7 +1908,7 @@ packages:
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.2
+      debug: 4.3.3
       espree: 7.3.1
       globals: 13.12.0
       ignore: 4.0.6
@@ -1927,7 +1929,7 @@ packages:
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 1.2.0
-      debug: 4.3.2
+      debug: 4.3.3
       minimatch: 3.0.4
     transitivePeerDependencies:
       - supports-color
@@ -4198,7 +4200,7 @@ packages:
       '@typescript-eslint/scope-manager': 4.33.0
       '@typescript-eslint/types': 4.33.0
       '@typescript-eslint/typescript-estree': 4.33.0_typescript@4.4.4
-      debug: 4.3.2
+      debug: 4.3.3
       eslint: 7.32.0
       typescript: 4.4.4
     transitivePeerDependencies:
@@ -4229,7 +4231,7 @@ packages:
     dependencies:
       '@typescript-eslint/types': 4.33.0
       '@typescript-eslint/visitor-keys': 4.33.0
-      debug: 4.3.2
+      debug: 4.3.3
       globby: 11.0.4
       is-glob: 4.0.3
       semver: 7.3.5
@@ -4263,13 +4265,13 @@ packages:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue/1.9.4_vite@2.6.13:
+  /@vitejs/plugin-vue/1.9.4_vite@2.6.14:
     resolution: {integrity: sha512-0CZqaCoChriPTTtGkERy1LGPcYjGFpi2uYRhBPIkqJqUGV5JnJFhQAgh6oH9j5XZHfrRaisX8W0xSpO4T7S78A==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
     dependencies:
-      vite: 2.6.13_less@4.1.2
+      vite: 2.6.14_less@4.1.2
     dev: true
 
   /@volar/code-gen/0.27.24:
@@ -4527,22 +4529,22 @@ packages:
       '@xtuc/long': 4.2.2
     dev: true
 
-  /@windicss/config/1.4.12:
-    resolution: {integrity: sha512-+ckfkRoWC8wia5o7iCyDmydiJEkjX6lVEb6a2QVPI9WQ9Mi7hqfgOoStijOsEn0wIz95FDiOfVe5aSb1V4jEtw==}
+  /@windicss/config/1.5.4:
+    resolution: {integrity: sha512-muRPFulqh7nU3VrsPb5+k6ulNyiw8VGg62zAWRZIBfeCRXZb2gV1Q8a/tPn8X1T/+HTt4f/1bzFiusqMKscmlw==}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       jiti: 1.12.9
       windicss: 3.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@windicss/plugin-utils/1.4.12:
-    resolution: {integrity: sha512-ixYflwELxEjHyh0B9HqTwDp1d3v5IWtUucVY84o41ZU53BkuRw1lKbNlLMqbrtbk8p8rAQxjuwWZkWxFYi77tQ==}
+  /@windicss/plugin-utils/1.5.4:
+    resolution: {integrity: sha512-fS4y52OYB9rIzEUolIWIrrHYuaQfcqTaX3ISbFUiNbvNgH97JATjzB2iOnNqWNy6pH3M8RP0TqYQOOCCeanDoA==}
     dependencies:
       '@antfu/utils': 0.3.0
-      '@windicss/config': 1.4.12
-      debug: 4.3.2
+      '@windicss/config': 1.5.4
+      debug: 4.3.3
       fast-glob: 3.2.7
       magic-string: 0.25.7
       micromatch: 4.0.4
@@ -6552,6 +6554,18 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 8.1.1
+    dev: true
+
+  /debug/4.3.3:
+    resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
     dev: true
 
   /decamelize-keys/1.1.0:
@@ -10644,7 +10658,7 @@ packages:
   /micromark/2.11.4:
     resolution: {integrity: sha512-+WoovN/ppKolQOFIAajxi7Lu9kInbPxFuTBVEavFcL8eAfVstoc5MocPmqBeAdBOJV00uaVjegzH4+MA0DN/uA==}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       parse-entities: 2.0.0
     transitivePeerDependencies:
       - supports-color
@@ -13749,7 +13763,7 @@ packages:
     resolution: {integrity: sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==}
     dev: true
 
-  /storybook-builder-vite/0.1.3_@babel+core@7.16.0+vite@2.6.13:
+  /storybook-builder-vite/0.1.3_@babel+core@7.16.0+vite@2.6.14:
     resolution: {integrity: sha512-47FczSqBp5RIlTPGsfXWGrmYtow91xEj3Lk4t4Blpiu8+Hpz9wX9TyQU4wBmUhW2cuM7ksgaqt7O4fGZu9eONQ==}
     peerDependencies:
       vite: '>=2.6.7'
@@ -13760,8 +13774,8 @@ packages:
       es-module-lexer: 0.9.3
       glob: 7.2.0
       glob-promise: 4.2.2_glob@7.2.0
-      vite: 2.6.13_less@4.1.2
-      vite-plugin-mdx: 3.5.9_@mdx-js+mdx@1.6.22+vite@2.6.13
+      vite: 2.6.14_less@4.1.2
+      vite-plugin-mdx: 3.5.9_@mdx-js+mdx@1.6.22+vite@2.6.14
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -14075,7 +14089,7 @@ packages:
       balanced-match: 2.0.0
       chalk: 4.1.2
       cosmiconfig: 7.0.1
-      debug: 4.3.2
+      debug: 4.3.3
       execall: 2.0.0
       fast-glob: 3.2.7
       fastest-levenshtein: 1.0.12
@@ -14299,6 +14313,12 @@ packages:
       slice-ansi: 4.0.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
+    dev: true
+
+  /tailwindcss-themeable/1.0.1:
+    resolution: {integrity: sha512-39znWVb0JUhwJ+FC03M2lFbxYmvbK0H6nynWINcza11Y1D5O1qU/Sf99HCuppBCKHMJpZPnz6QUcfnViW/2kHg==}
+    dependencies:
+      color-convert: 2.0.1
     dev: true
 
   /tapable/1.1.3:
@@ -14936,7 +14956,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /unplugin-icons/0.12.17_vite@2.6.13:
+  /unplugin-icons/0.12.17_vite@2.6.14:
     resolution: {integrity: sha512-y6KNKlwcLXlbfpZY48lO0blsH/uwHbvxD2sgCaw1AhgFk9Bjw7hA1kQxhUWPAIRySeobve2YP7HGKLHoIctXPA==}
     peerDependencies:
       '@svgr/core': ^5.5.0
@@ -14959,7 +14979,7 @@ packages:
       debug: 4.3.2
       kolorist: 1.5.0
       local-pkg: 0.4.0
-      unplugin: 0.2.19_vite@2.6.13
+      unplugin: 0.2.19_vite@2.6.14
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -14967,7 +14987,7 @@ packages:
       - webpack
     dev: true
 
-  /unplugin/0.2.19_vite@2.6.13:
+  /unplugin/0.2.19_vite@2.6.14:
     resolution: {integrity: sha512-r5PDeBBecir99rhLFp1ftqIkp5afD91anweIlWtF5Ca46FJsn2kQczD93FdFJw79R6HSF5waeYo79bFOQ9GVhQ==}
     peerDependencies:
       rollup: ^2.50.0
@@ -14981,7 +15001,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      vite: 2.6.13_less@4.1.2
+      vite: 2.6.14_less@4.1.2
       webpack-virtual-modules: 0.4.3
     dev: true
 
@@ -15233,7 +15253,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-plugin-mdx/3.5.9_@mdx-js+mdx@1.6.22+vite@2.6.13:
+  /vite-plugin-mdx/3.5.9_@mdx-js+mdx@1.6.22+vite@2.6.14:
     resolution: {integrity: sha512-M6AtM2wAwj4dbcR8Dtwhkws54HLRxVS86+C07D/C6betOP/PnQWbODQCNhk6OCAuGb/kWbFy8nBg2e2vz3ZeSg==}
     peerDependencies:
       '@mdx-js/mdx': '*'
@@ -15244,25 +15264,25 @@ packages:
       esbuild: 0.13.8
       resolve: 1.20.0
       unified: 9.2.2
-      vite: 2.6.13_less@4.1.2
+      vite: 2.6.14_less@4.1.2
     dev: true
 
-  /vite-plugin-windicss/1.4.12_vite@2.6.13:
-    resolution: {integrity: sha512-5YLT7e72z1vCTSmprU/KxtRg22ySN+H19Qxy67lbG3mEbq8YbheOlmVhbqNqSv2MjFVhFqu72Q1FkkjyWENyQQ==}
+  /vite-plugin-windicss/1.5.4_vite@2.6.14:
+    resolution: {integrity: sha512-bG2IERA9J50MGq1QEbGC/PjrkVIaq2b3LilCeidyIpmFV/4aR14/wGDe83SobF+8coIeJ+23S0uDK/fXX5X0pQ==}
     peerDependencies:
       vite: ^2.0.1
     dependencies:
-      '@windicss/plugin-utils': 1.4.12
-      chalk: 4.1.2
-      debug: 4.3.2
-      vite: 2.6.13_less@4.1.2
+      '@windicss/plugin-utils': 1.5.4
+      debug: 4.3.3
+      kolorist: 1.5.0
+      vite: 2.6.14_less@4.1.2
       windicss: 3.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.6.13_less@4.1.2:
-    resolution: {integrity: sha512-+tGZ1OxozRirTudl4M3N3UTNJOlxdVo/qBl2IlDEy/ZpTFcskp+k5ncNjayR3bRYTCbqSOFz2JWGN1UmuDMScA==}
+  /vite/2.6.14_less@4.1.2:
+    resolution: {integrity: sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -15482,7 +15502,7 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       eslint: 7.32.0
       eslint-scope: 6.0.0
       eslint-visitor-keys: 3.0.0

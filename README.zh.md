@@ -45,6 +45,9 @@ pnpm run build-storybook
 
 构建之后，`dist` 文件夹中会包含项目和 Storybook 的静态资源文件。你可以使用 `pnpm run serve` 使用本地服务器来 serve 这些静态资源。
 
+- http://localhost:5000/vue3-compact-template/
+- http://localhost:5000/vue3-compact-template/storybook/
+
 ### 推荐搭配
 
 - 组件库: [NaiveUI](https://www.naiveui.com/zh-CN/os-theme), [arco design](https://arco.design/), [Varlet](https://github.com/haoziqaq/varlet)
