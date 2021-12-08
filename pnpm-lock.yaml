@@ -38,7 +38,7 @@ specifiers:
   stylelint-config-recommended-vue: ^1.0.0
   stylelint-config-standard: ^23.0.0
   stylelint-less: ^1.0.1
-  tailwindcss-themeable: ^1.0.0
+  tailwindcss-themeable: ^1.3.0
   typescript: ^4.4.4
   unplugin-icons: ^0.12.17
   vite: ^2.6.14
@@ -91,7 +91,7 @@ devDependencies:
   stylelint-config-recommended-vue: 1.0.0_stylelint@14.0.1
   stylelint-config-standard: 23.0.0_stylelint@14.0.1
   stylelint-less: 1.0.1
-  tailwindcss-themeable: 1.0.1
+  tailwindcss-themeable: 1.3.0
   typescript: 4.4.4
   unplugin-icons: 0.12.17_vite@2.6.14
   vite: 2.6.14_less@4.1.2
@@ -14315,10 +14315,8 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss-themeable/1.0.1:
-    resolution: {integrity: sha512-39znWVb0JUhwJ+FC03M2lFbxYmvbK0H6nynWINcza11Y1D5O1qU/Sf99HCuppBCKHMJpZPnz6QUcfnViW/2kHg==}
-    dependencies:
-      color-convert: 2.0.1
+  /tailwindcss-themeable/1.3.0:
+    resolution: {integrity: sha512-AmZrk3yAZaJqfrbGast24KrFDtD21rwil05xuqNMFPWTswCHyFugetPk9vy1X+KD4ZTAFWZwW2ULov6VUeK/1A==}
     dev: true
 
   /tapable/1.1.3:
